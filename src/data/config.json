@@ -3,11 +3,11 @@
     "logo": "https://via.placeholder.com/150",
     "name": "Master Config Business",
     "colors": {
-      "primary": "#0f172a",
       "accent": "#d4af37",
+      "primary": "#0f172a",
+      "text_low": "#94a3b8",
       "secondary": "#1e293b",
-      "text_high": "#f8fafc",
-      "text_low": "#94a3b8"
+      "text_high": "#f8fafc"
     },
     "typography": {
       "main": "Inter, system-ui, sans-serif",
@@ -42,5 +42,5 @@
       "label": "Market"
     }
   ],
-  "updated_at": "2026-04-03T22:57:11.389Z"
+  "updated_at": "2026-04-03T23:56:18.740Z"
 }
