@@ -1,93 +1,107 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout>
-    <!-- Glass Navigation -->
-    <nav class="fixed top-0 w-full z-50 px-6 py-4">
-        <div class="max-w-7xl mx-auto glass-effect rounded-2xl px-6 py-3 flex justify-between items-center">
-            <div class="text-2xl font-extrabold tracking-tighter">RES<span style="color: var(--accent)">ANALYZE</span></div>
-            <div class="hidden md:flex gap-8 text-sm font-medium">
-                <a href="#" class="hover:text-[var(--accent)] transition-colors">Engine</a>
-                <a href="#" class="hover:text-[var(--accent)] transition-colors">Bento-Logic</a>
-                <a href="#" class="hover:text-[var(--accent)] transition-colors">Pricing</a>
-            </div>
-            <a href="/auth" class="glass-effect px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/10 transition-all">Client Portal</a>
+<Layout title="Reformas Genaro Bogado | Arquitectura y Reformas">
+  <!-- Glass Navigation -->
+  <nav class="fixed top-0 w-full z-50 px-6 py-4">
+    <div class="max-w-7xl mx-auto glass-effect rounded-2xl px-6 py-3 flex justify-between items-center">
+      <div class="text-2xl font-extrabold tracking-tighter font-serif">
+        GENARO <span style="color: var(--accent)">BOGADO</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#services" class="hover:text-[var(--accent)] transition-colors">Servicios</a>
+        <a href="#portfolio" class="hover:text-[var(--accent)] transition-colors">Portafolio</a>
+        <a href="#process" class="hover:text-[var(--accent)] transition-colors">Proceso</a>
+      </div>
+      <a href="#contact" class="glass-effect px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/10 transition-all border-[var(--accent)] text-[var(--accent)]">
+        Solicitar Presupuesto
+      </a>
+    </div>
+  </nav>
+
+  <!-- Kinetic Hero Section -->
+  <section class="relative pt-48 pb-32 px-6 flex flex-col items-center text-center">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[var(--accent)] opacity-10 blur-[150px] rounded-full -z-10"></div>
+    
+    <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-6 max-w-5xl leading-tight">
+      <span class="shimmer-text">Excelencia Estructural</span>
+      <br/>
+      <span class="kinetic-text">Diseño de Vanguardia</span>
+    </h1>
+    
+    <p class="text-lg md:text-xl text-[var(--text-low)] max-w-2xl mb-10">
+      Especialistas en reformas integrales y mejoras estructurales de alta gama. 
+      Convertimos espacios obsoletos en obras maestras de funcionalidad y lujo.
+    </p>
+    
+    <div class="flex flex-col sm:flex-row gap-4">
+      <button class="px-8 py-4 rounded-full font-bold text-black transition-transform hover:scale-105" style="background: var(--accent); box-shadow: 0 0 30px rgba(212, 175, 55, 0.4)">
+        Empezar mi Proyecto
+      </button>
+      <button class="glass-effect px-8 py-4 rounded-full font-bold hover:bg-white/5 transition-all">
+        Explorar Portafolio
+      </button>
+    </div>
+  </section>
+
+  <!-- Bento Grid Features -->
+  <section id="services" class="px-6 py-20 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[260px]">
+      
+      <!-- Cell A: Structural Masterclass -->
+      <div class="md:col-span-2 md:row-span-2 glass-effect rounded-3xl p-8 flex flex-col justify-end group overflow-hidden relative">
+        <div class="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-100 transition-opacity">
+          <div class="w-24 h-24 border-2 border-[var(--accent)] rounded-full animate-pulse"></div>
         </div>
-    </nav>
-
-    <!-- Kinetic Hero Section -->
-    <section class="relative pt-32 pb-20 px-6 flex flex-col items-center text-center">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[var(--accent)] opacity-20 blur-[120px] rounded-full -z-10"></div>
-        
-        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-6 max-w-4xl">
-            <span class="shimmer-text">Precision Analysis</span> <br/> 
-            <span class="kinetic-text">for Modern SaaS</span>
-        </h1>
-        <p class="text-lg md:text-xl text-[var(--text-low)] max-w-2xl mb-10">
-            Deploy the world's first Bento-driven optimization engine. Convert raw data into high-velocity revenue streams with glassmorphic clarity.
-        </p>
-        <div class="flex gap-4">
-            <button class="px-8 py-4 rounded-full font-bold text-black" style="background: var(--accent); box-shadow: 0 0 20px var(--accent)">Start Free Analysis</button>
-            <button class="glass-effect px-8 py-4 rounded-full font-bold hover:bg-white/5 transition-all">View Demo</button>
+        <h3 class="text-3xl font-bold mb-2 font-serif">Ingeniería Estructural</h3>
+        <p class="text-[var(--text-low)]">Refuerzos, redistribución de espacios y consolidación de cimientos con normativa técnica avanzada.</p>
+        <div class="mt-6 flex gap-2">
+          <span class="text-xs px-3 py-1 rounded-full bg-white/10 border border-white/20">ISO Certified</span>
+          <span class="text-xs px-3 py-1 rounded-full bg-white/10 border border-white/20">Premium Materials</span>
         </div>
-    </section>
+      </div>
 
-    <!-- Bento Grid Features -->
-    <section class="px-6 py-20 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[240px]">
-            <!-- Cell A: Large Logic Flow -->
-            <div class="md:col-span-2 md:row-span-2 glass-effect rounded-3xl p-8 flex flex-col justify-end group overflow-hidden relative">
-                <div class="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-100 transition-opacity">
-                    <div class="w-32 h-32 border-4 border-[var(--secondary)] rounded-full animate-ping"></div>
-                </div>
-                <h3 class="text-3xl font-bold mb-2">Logic Flow Engine</h3>
-                <p class="text-[var(--text-low)]">Real-time mapping of user conversion paths with automated friction detection.</p>
-            </div>
-
-            <!-- Cell B: ROI Tracker -->
-            <div class="md:col-span-2 glass-effect rounded-3xl p-8 flex items-center justify-between group">
-                <div>
-                    <h3 class="text-2xl font-bold mb-1">ROI Accelerator</h3>
-                    <p class="text-[var(--text-low)]">+42% Average Lift</p>
-                </div>
-                <div class="text-5xl font-black text-[var(--secondary)] group-hover:scale-110 transition-transform">📈</div>
-            </div>
-
-            <!-- Cell C: Integration -->
-            <div class="glass-effect rounded-3xl p-8 flex flex-col justify-center items-center text-center">
-                <div class="text-4xl mb-2">🔌</div>
-                <h3 class="font-bold">API Connect</h3>
-                <p class="text-xs text-[var(--text-low)]">1-Click Integration</p>
-            </div>
-
-            <!-- Cell D: Trust -->
-            <div class="glass-effect rounded-3xl p-8 flex flex-col justify-center items-center text-center">
-                <div class="text-4xl mb-2">💎</div>
-                <h3 class="font-bold">Enterprise</h3>
-                <p class="text-xs text-[var(--text-low)]">SOC2 Compliant</p>
-            </div>
+      <!-- Cell B: Interior Design -->
+      <div class="md:col-span-2 glass-effect rounded-3xl p-8 flex items-center justify-between group hover:border-[var(--accent)] transition-all">
+        <div>
+          <h3 class="text-2xl font-bold mb-2 font-serif">Interiorismo de Lujo</h3>
+          <p class="text-[var(--text-low)]">Estética minimalista y materiales nobles.</p>
         </div>
-    </section>
+        <div class="text-4xl group-hover:rotate-12 transition-transform">🏛️</div>
+      </div>
 
-    <!-- Lead Gen Hook -->
-    <section class="px-6 py-32 text-center">
-        <div class="max-w-3xl mx-auto glass-effect rounded-[40px] p-12 border-[var(--accent)]/30">
-            <h2 class="text-4xl font-bold mb-6">Unlock Your Performance Report</h2>
-            <p class="text-[var(--text-low)] mb-8">Enter your URL and we'll run a complimentary deep-scan of your conversion logic.</p>
-            <form class="flex flex-col md:flex-row gap-4">
-                <input type="email" placeholder="Enter your business email" class="flex-1 bg-black/40 border border-white/10 rounded-full px-6 py-4 focus:outline-none focus:border-[var(--accent)] transition-all" />
-                <button class="px-8 py-4 rounded-full font-bold" style="background: var(--secondary); color: black">Run Quick Scan</button>
-            </form>
-        </div>
-    </section>
+      <!-- Cell C: Turnkey Solutions -->
+      <div class="glass-effect rounded-3xl p-8 flex flex-col justify-center group hover:bg-white/5 transition-all">
+        <h3 class="text-xl font-bold mb-2 font-serif">Llave en Mano</h3>
+        <p class="text-sm text-[var(--text-low)]">Gestión total desde el plano hasta la entrega final.</p>
+      </div>
 
-    <style>
-        section { scroll-margin-top: 100px; }
-        /* Simple reveal animation */
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .glass-effect { animation: slideUp 0.6s ease-out forwards; }
-    </style>
+      <!-- Cell D: ROI/Value Increase -->
+      <div class="glass-effect rounded-3xl p-8 flex flex-col justify-center group bg-gradient-to-br from-transparent to-[var(--accent)]/10">
+        <h3 class="text-xl font-bold mb-2 font-serif">Valorización</h3>
+        <p class="text-sm text-[var(--text-low)]">Incrementamos el valor patrimonial de su propiedad.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lead Generation Section -->
+  <section id="contact" class="px-6 py-20 max-w-4xl mx-auto text-center">
+    <div class="glass-effect p-12 rounded-[3rem] border-t-4 border-t-[var(--accent)]">
+      <h2 class="text-4xl font-bold mb-4 font-serif">¿Listo para transformar su espacio?</h2>
+      <p class="text-[var(--text-low)] mb-8">Agende una consultoría técnica personalizada con nuestro equipo de arquitectura.</p>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+        <input type="text" placeholder="Nombre Completo" class="bg-white/5 border border-white/10 px-6 py-4 rounded-2xl focus:outline-none focus:border-[var(--accent)] transition-all" />
+        <input type="email" placeholder="Correo Electrónico" class="bg-white/5 border border-white/10 px-6 py-4 rounded-2xl focus:outline-none focus:border-[var(--accent)] transition-all" />
+        <textarea placeholder="Describa su proyecto..." class="md:col-span-2 bg-white/5 border border-white/10 px-6 py-4 rounded-2xl focus:outline-none focus:border-[var(--accent)] transition-all h-32"></textarea>
+        <button class="md:col-span-2 py-4 rounded-2xl font-bold text-black transition-all hover:brightness-110" style="background: var(--accent)">
+          Enviar Solicitud de Presupuesto
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-[var(--text-low)]">
+    © {new Date().getFullYear()} Reformas Genaro Bogado. Todos los derechos reservados.
+  </footer>
 </Layout>
