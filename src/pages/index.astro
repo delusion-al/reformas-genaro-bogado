@@ -1,17 +1,93 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import config from '../data/config.json';
-const { brand, seo } = config;
 ---
-<Layout title={seo?.title || 'Neural Node'}>
-  <main class="min-h-screen flex flex-col items-center justify-center p-8 text-center">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.1),transparent)] pointer-events-none"></div>
-    <h1 class="text-6xl font-black italic tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 uppercase">
-       {brand?.name || 'NODE'}
-    </h1>
-    <p class="text-slate-400 text-lg max-w-xl italic">"{seo?.description}"</p>
-    <div class="mt-12 p-6 border border-white/5 rounded-3xl bg-black/40 backdrop-blur-xl">
-       <span class="text-[10px] font-black tracking-widest text-blue-500 uppercase italic">Neural Experience Actived</span>
-    </div>
-  </main>
+<Layout>
+    <!-- Glass Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto glass-effect rounded-2xl px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter">RES<span style="color: var(--accent)">ANALYZE</span></div>
+            <div class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-[var(--accent)] transition-colors">Engine</a>
+                <a href="#" class="hover:text-[var(--accent)] transition-colors">Bento-Logic</a>
+                <a href="#" class="hover:text-[var(--accent)] transition-colors">Pricing</a>
+            </div>
+            <a href="/auth" class="glass-effect px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/10 transition-all">Client Portal</a>
+        </div>
+    </nav>
+
+    <!-- Kinetic Hero Section -->
+    <section class="relative pt-32 pb-20 px-6 flex flex-col items-center text-center">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[var(--accent)] opacity-20 blur-[120px] rounded-full -z-10"></div>
+        
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight mb-6 max-w-4xl">
+            <span class="shimmer-text">Precision Analysis</span> <br/> 
+            <span class="kinetic-text">for Modern SaaS</span>
+        </h1>
+        <p class="text-lg md:text-xl text-[var(--text-low)] max-w-2xl mb-10">
+            Deploy the world's first Bento-driven optimization engine. Convert raw data into high-velocity revenue streams with glassmorphic clarity.
+        </p>
+        <div class="flex gap-4">
+            <button class="px-8 py-4 rounded-full font-bold text-black" style="background: var(--accent); box-shadow: 0 0 20px var(--accent)">Start Free Analysis</button>
+            <button class="glass-effect px-8 py-4 rounded-full font-bold hover:bg-white/5 transition-all">View Demo</button>
+        </div>
+    </section>
+
+    <!-- Bento Grid Features -->
+    <section class="px-6 py-20 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[240px]">
+            <!-- Cell A: Large Logic Flow -->
+            <div class="md:col-span-2 md:row-span-2 glass-effect rounded-3xl p-8 flex flex-col justify-end group overflow-hidden relative">
+                <div class="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-100 transition-opacity">
+                    <div class="w-32 h-32 border-4 border-[var(--secondary)] rounded-full animate-ping"></div>
+                </div>
+                <h3 class="text-3xl font-bold mb-2">Logic Flow Engine</h3>
+                <p class="text-[var(--text-low)]">Real-time mapping of user conversion paths with automated friction detection.</p>
+            </div>
+
+            <!-- Cell B: ROI Tracker -->
+            <div class="md:col-span-2 glass-effect rounded-3xl p-8 flex items-center justify-between group">
+                <div>
+                    <h3 class="text-2xl font-bold mb-1">ROI Accelerator</h3>
+                    <p class="text-[var(--text-low)]">+42% Average Lift</p>
+                </div>
+                <div class="text-5xl font-black text-[var(--secondary)] group-hover:scale-110 transition-transform">📈</div>
+            </div>
+
+            <!-- Cell C: Integration -->
+            <div class="glass-effect rounded-3xl p-8 flex flex-col justify-center items-center text-center">
+                <div class="text-4xl mb-2">🔌</div>
+                <h3 class="font-bold">API Connect</h3>
+                <p class="text-xs text-[var(--text-low)]">1-Click Integration</p>
+            </div>
+
+            <!-- Cell D: Trust -->
+            <div class="glass-effect rounded-3xl p-8 flex flex-col justify-center items-center text-center">
+                <div class="text-4xl mb-2">💎</div>
+                <h3 class="font-bold">Enterprise</h3>
+                <p class="text-xs text-[var(--text-low)]">SOC2 Compliant</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Gen Hook -->
+    <section class="px-6 py-32 text-center">
+        <div class="max-w-3xl mx-auto glass-effect rounded-[40px] p-12 border-[var(--accent)]/30">
+            <h2 class="text-4xl font-bold mb-6">Unlock Your Performance Report</h2>
+            <p class="text-[var(--text-low)] mb-8">Enter your URL and we'll run a complimentary deep-scan of your conversion logic.</p>
+            <form class="flex flex-col md:flex-row gap-4">
+                <input type="email" placeholder="Enter your business email" class="flex-1 bg-black/40 border border-white/10 rounded-full px-6 py-4 focus:outline-none focus:border-[var(--accent)] transition-all" />
+                <button class="px-8 py-4 rounded-full font-bold" style="background: var(--secondary); color: black">Run Quick Scan</button>
+            </form>
+        </div>
+    </section>
+
+    <style>
+        section { scroll-margin-top: 100px; }
+        /* Simple reveal animation */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .glass-effect { animation: slideUp 0.6s ease-out forwards; }
+    </style>
 </Layout>
