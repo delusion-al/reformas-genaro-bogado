@@ -3,22 +3,32 @@
     "logo": "https://via.placeholder.com/150",
     "name": "Master Config Business",
     "primaryColor": "#0ea5e9",
-    "secondaryColor": "#f1f5f9"
+    "secondaryColor": "#f1f5f9",
+    "colors": {
+      "primary": "hsl(230, 25%, 7%)",
+      "accent": "hsl(265, 90%, 65%)",
+      "secondary": "hsl(180, 100%, 50%)",
+      "surface": "hsla(230, 25%, 15%, 0.6)",
+      "text": "hsl(0, 0%, 98%)"
+    },
+    "typography": {
+      "main": "Inter, system-ui, sans-serif",
+      "display": "Cal Sans, Geist, sans-serif"
+    }
   },
   "seo": {
-    "title": "Master Hosted Business",
-    "description": "This is fetched from Supabase."
+    "title": "Res-Analyze | Premium SaaS Optimization Engine",
+    "description": "Hyper-scale your ROI with the industry's most advanced analysis engine. Precision data, glassmorphic insights, and kinetic growth."
   },
   "pages": [
     {
-      "slug": null,
-      "components": [
-        {
-          "type": "Hero",
-          "props": {
-            "title": "Hello from Cloud Oracle"
-          }
-        }
+      "id": "home",
+      "blocks": [
+        "GlassNav",
+        "KineticHero",
+        "BentoFeatureGrid",
+        "LeadGenHook",
+        "GlassFooter"
       ]
     }
   ],
@@ -32,5 +42,5 @@
       "label": "Market"
     }
   ],
-  "updated_at": "2026-04-03T19:43:19.659Z"
+  "updated_at": "2026-04-03T22:02:18.983Z"
 }
