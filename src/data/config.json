@@ -1,0 +1,36 @@
+{
+  "brand": {
+    "logo": "https://via.placeholder.com/150",
+    "name": "Master Config Business",
+    "primaryColor": "#0ea5e9",
+    "secondaryColor": "#f1f5f9"
+  },
+  "seo": {
+    "title": "Master Hosted Business",
+    "description": "This is fetched from Supabase."
+  },
+  "pages": [
+    {
+      "slug": null,
+      "components": [
+        {
+          "type": "Hero",
+          "props": {
+            "title": "Hello from Cloud Oracle"
+          }
+        }
+      ]
+    }
+  ],
+  "navbar": [
+    {
+      "url": "/",
+      "label": "Inicio"
+    },
+    {
+      "url": "/market",
+      "label": "Market"
+    }
+  ],
+  "updated_at": "2026-04-03T19:43:19.659Z"
+}
