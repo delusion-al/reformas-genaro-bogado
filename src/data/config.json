@@ -2,33 +2,33 @@
   "brand": {
     "logo": "https://via.placeholder.com/150",
     "name": "Master Config Business",
-    "primaryColor": "#0ea5e9",
-    "secondaryColor": "#f1f5f9",
     "colors": {
-      "primary": "hsl(230, 25%, 7%)",
-      "accent": "hsl(265, 90%, 65%)",
-      "secondary": "hsl(180, 100%, 50%)",
-      "surface": "hsla(230, 25%, 15%, 0.6)",
-      "text": "hsl(0, 0%, 98%)"
+      "primary": "#0f172a",
+      "accent": "#d4af37",
+      "secondary": "#1e293b",
+      "text_high": "#f8fafc",
+      "text_low": "#94a3b8"
     },
     "typography": {
       "main": "Inter, system-ui, sans-serif",
       "display": "Cal Sans, Geist, sans-serif"
-    }
+    },
+    "primaryColor": "#0ea5e9",
+    "secondaryColor": "#f1f5f9"
   },
   "seo": {
-    "title": "Res-Analyze | Premium SaaS Optimization Engine",
-    "description": "Hyper-scale your ROI with the industry's most advanced analysis engine. Precision data, glassmorphic insights, and kinetic growth."
+    "title": "Reformas Genaro Bogado | High-End Structural Improvements & Luxury Renovations",
+    "description": "Transforming residential and commercial spaces with precision engineering and luxury design. Specialized in structural improvements, modern remodeling, and turnkey renovations."
   },
   "pages": [
     {
       "id": "home",
       "blocks": [
-        "GlassNav",
+        "GlassNavigation",
         "KineticHero",
-        "BentoFeatureGrid",
-        "LeadGenHook",
-        "GlassFooter"
+        "BentoServicesGrid",
+        "TrustSignals",
+        "LeadCaptureForm"
       ]
     }
   ],
@@ -42,5 +42,5 @@
       "label": "Market"
     }
   ],
-  "updated_at": "2026-04-03T22:02:18.983Z"
+  "updated_at": "2026-04-03T22:57:11.389Z"
 }
